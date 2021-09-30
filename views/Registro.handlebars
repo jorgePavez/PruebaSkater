@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <title>Registro Skatepark</title>
+
+  </head> 
+  
+  
+  <body>
+
+<h1>Skate Park</h1>
+
+<div class='py-4'>
+  <h2>Registro</h2>
+  <hr class='w-50' />
+
+  <form action="/skaterprofile" method="POST" enctype="multipart/form-data"> 
+    <div class='form-group row w-50 m-auto'>
+      <div class='form-group col-12 col-sm-6'>
+        <label>Email</label>
+        <input class='form-control m-auto' type="email" name="email" id="email" placeholder="ejemplo@superskater.com"/>
+      </div>
+      <div class='form-group col-12 col-sm-6'>
+        <label>Nombre</label>
+        <input class='form-control m-auto' type="text" name="nombre" id="nombre" placeholder="escriba su nombre aqui"/>
+      </div>
+      <div class='form-group col-12 col-sm-6'>
+        <label>Password</label>
+        <input class='form-control m-auto' type="password" name="pw1" id="pw" placeholder="escriba su password"/>
+      </div>
+      <div class='form-group col-12 col-sm-6'>
+        <label>Repita la password</label>
+        <input class='form-control m-auto' type="password" name="pw2" id="pw2" placeholder="repita password aqui"/>
+      </div>
+      <div class='form-group col-12 col-sm-6'>
+        <label>Años de experiencia</label>
+        <input class='form-control m-auto' type="number" name="experiencia" id='anos_experiencia'/>
+      </div>
+      <div class='form-group col-12 col-sm-6'>
+        <label>Especialidad</label>
+        <input class='form-control m-auto' type="text" name="especialidad" id='especialidad'/>
+      </div>
+      <div class='form-group col-12 col-sm-12 mt-2'>
+        <label>Foto de perfil</label>
+        <input type="file" name="fotoSkater" id="foto" placeholder="Seleccionar Imagen"/>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-info mb-3" id="btnRegistrar">Registrarme</button>
+        <p><a href="/login"> Iniciar sesión</a></p>
+  </form>
+</div>
+<script src="/index.js"></script>
+</body>
+</html>
